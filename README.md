@@ -21,7 +21,10 @@ The CSS file contains styling rules for the web application, defining the appear
 
 ## Instructions:
 
-1. Ensure you have the required dependencies installed by following the instructions in `model training.ipynb`.
+1. Ensure you have the required dependencies installed by running the following command:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 2. Run the Flask application using the command:
     ```bash
@@ -37,6 +40,7 @@ The CSS file contains styling rules for the web application, defining the appear
 - The spam detection model is trained using the `spam.csv` dataset (not provided here). Make sure to replace it with your own dataset or adjust the code accordingly.
 
 - The project uses Flask-SocketIO for real-time updates. Ensure that you have the required dependencies installed:
+
     ```bash
     pip install Flask Flask-SocketIO pandas scikit-learn
     ```
