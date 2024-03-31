@@ -1,0 +1,39 @@
+<!-- home_with_chat.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Detector with Chat</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h2>Spam Detector For SMS Messages</h2>
+    </div>
+  </header>
+  <div id="resultContainer" class="results"></div>
+
+  <div class="ml-container">
+    <div id="chatBox">
+      <h3>Chat Box</h3>
+      <ul id="chatList"></ul>
+    </div>
+
+    <form id="predictionForm">
+      <textarea id="messageInput" name="message" rows="4" cols="50" placeholder="Enter Your Message Here"></textarea>
+      <br />
+      <input type="button" class="btn-info" value="Predict" onclick="predict()">
+    </form>
+    <div id="loading" style="display: none;">Processing...</div>
+  </div>
+</body>
+
+</html>
