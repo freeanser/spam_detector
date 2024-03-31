@@ -1,0 +1,99 @@
+/* styles.css 文件 */
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  background-color: #ede7e4;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #d1b8b2;
+  border-bottom: #b9918c 3px solid;
+  height: 120px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+#chatBox {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+  /* 保留對話框高度設置 */
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+#chatBox h3 {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}
+
+#chatList {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  overflow-y: auto;
+}
+
+#chatList li {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#chatList li.user {
+  background-color: #e2d8d5;
+}
+
+#chatList li.bot {
+  background-color: #d7c2bd;
+}
+
+#predictionForm {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#messageInput {
+  width: calc(100% - 20px);
+  /* 跟#predictionForm一樣寬 */
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.btn-info {
+  background-color: #c6b09f;
+  height: 40px;
+  width: 100px;
+}
+
+.btn-info:hover {
+  background: #a8917c;
+}
+
+.results {
+  border-radius: 15px 50px;
+  background: #FFF7E8;
+  padding: 20px;
+  height: 80px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
